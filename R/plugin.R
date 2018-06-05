@@ -72,8 +72,13 @@ solve_OP <- function(x, control = list()){
 
     ## print_options(m)
 
-    H <- as.vector(t(Q))
-    g <- as.vector(terms(objective(x))[["L"]])
+    if ( maximum(x) ) {
+        H <- -as.vector(t(Q))
+        g <- -as.vector(terms(objective(x))[["L"]])
+    } else {
+        H <- as.vector(t(Q))
+        g <- as.vector(terms(objective(x))[["L"]])    
+    }
     A <- as.vector(t(constraints(x)$L))
     lb <- to_dense_vector(bounds(x)$lower, nvariables)
     ub <- to_dense_vector(bounds(x)$upper, nvariables, Inf)

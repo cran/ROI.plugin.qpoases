@@ -1,7 +1,7 @@
-875c1614197db87e6a623ef16010c294 *DESCRIPTION
+df71d72ff5f86e6bd075d7539eae20a9 *DESCRIPTION
 499611d4b1973176e79a6a43b1abdbb9 *NAMESPACE
 238b44f6b331bb50bccbb679287e92b1 *R/RcppExports.R
-654df237c822986f45ec82d7b4cb2097 *R/plugin.R
+9ffbbffdd8542dd61d6349297a526697 *R/plugin.R
 4153d925bd2cebbaf0c68758c768f809 *R/status_codes.R
 7d78121a5fb734bdce1a2c75d11ae5e5 *R/zzz.R
 30040b9b5495648e782974c752fc9175 *man/Example_01.Rd
@@ -63,4 +63,4 @@ bcb8df48bdc2bc7730e5ce875a53402e *src/qpoases/src/SparseSolver.cpp
 487573a6dc6c2ab1dcead3538592a759 *src/qpoases/src/SubjectTo.cpp
 c815e44d56a879e28fc839c5587ebd38 *src/qpoases/src/Utils.cpp
 1539757c867619ad22f714cdd7f4dd7c *src/qpoases/src/grep_files.R
-dc7b41d3c4405c5d09345f6ccc70db50 *tests/test_qpoases.R
+b6dab0857c8802aa5eb9ebbe02256a9c *tests/test_qpoases.R

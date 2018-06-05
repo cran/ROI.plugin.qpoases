@@ -78,6 +78,23 @@ test_qp_02 <- function(solver) {
 
 }
 
+## as qp_01 but maximize
+test_qp_03 <- function(solver) {
+    A <- cbind(c(-4, -3, 0), 
+               c( 2,  1, 0), 
+               c( 0, -2, 1))
+    x <- OP(Q_objective(-diag(3), L = -c(0, -5, 0)),
+            L_constraint(L = t(A),
+                         dir = rep(">=", 3),
+                         rhs = c(-8, 2, 0)),
+            maximum = TRUE)
+
+    opt <- ROI_solve(x, solver=solver, hessian_type = 1L)
+    solution <- c(0.476190476190476, 1.04761904761905, 2.0952380952381)
+    check("QP-01@01", equal(opt$solution, solution) )
+    check("QP-01@02", equal(opt$objval, 2.38095238095238) )
+}
+
 
 if ( !any("qpoases" %in% names(ROI_registered_solvers())) ) {
     ## This should never happen.
@@ -87,5 +104,6 @@ if ( !any("qpoases" %in% names(ROI_registered_solvers())) ) {
     print("Start Testing!")
     local({test_qp_01(solver)})
     local({test_qp_02(solver)})
+    local({test_qp_03(solver)})
 }
 

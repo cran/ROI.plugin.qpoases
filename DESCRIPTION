@@ -1,5 +1,5 @@
 Package: ROI.plugin.qpoases
-Version: 0.3-0
+Version: 0.3-1
 Title: 'qpOASES' Plugin for the 'R' Optimization Infrastructure
 Authors@R: c( person("Florian", "Schwendinger", role = c("aut", "cre"), email = "FlorianSchwendinger@gmx.at"),
               person("Hans Joachim", "Ferreau", role = "cph"),
@@ -15,7 +15,7 @@ License: GPL-3
 LinkingTo: Rcpp
 URL: http://R-Forge.R-project.org/projects/roi
 NeedsCompilation: yes
-Packaged: 2018-04-20 12:39:51 UTC; florian
+Packaged: 2018-06-05 14:02:46 UTC; florian
 Author: Florian Schwendinger [aut, cre],
   Hans Joachim Ferreau [cph],
   Andreas Potschka [cph],
@@ -24,4 +24,4 @@ Author: Florian Schwendinger [aut, cre],
   Andreas Waechter [cph]
 Maintainer: Florian Schwendinger <FlorianSchwendinger@gmx.at>
 Repository: CRAN
-Date/Publication: 2018-04-23 08:13:49 UTC
+Date/Publication: 2018-06-05 17:31:40 UTC
