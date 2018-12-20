@@ -366,6 +366,59 @@ SEXP get_dual_solution(SEXP r_model) {
     return Rcpp::wrap(vec);
 }
 
+
+/*
+ *  Read Test Problems from the QP Benchmark Collection
+ */
+
+// readOQPdimensions
+// [[Rcpp::export]]
+SEXP read_oqp_dimensions(std::string r_path) {
+    using namespace qpOASES;
+    int_t nQP, nV, nC, nEC;
+    const char* path = r_path.c_str();
+    readOqpDimensions(path, nQP, nV, nC, nEC);
+    return List::create(Named("number_of_qps") = nQP, 
+        Named("number_of_varibales") = nV, Named("number_of_constraints") = nC, 
+        Named("number_of_equality_constraints") = nEC);
+}
+
+// readOQPdata
+SEXP read_oqp_data(std::string r_path) {
+    using namespace qpOASES;
+    int_t nQP, nV, nC, nEC;
+    const char* path = r_path.c_str();
+    // TODO: !
+    return R_NilValue;
+}
+
+
+// returnValue readOqpData(    const char* path,   /**< Full path of the data files (without trailing slash!). */
+//                             int_t& nQP,         /**< Output: Number of QPs. */
+//                             int_t& nV,          /**< Output: Number of variables. */
+//                             int_t& nC,          /**< Output: Number of constraints. */
+//                             int_t& nEC,         /**< Output: Number of equality constraints. */
+//                             real_t** H,         /**< Output: Hessian matrix. */
+//                             real_t** g,         /**< Output: Sequence of gradient vectors. */
+//                             real_t** A,         /**< Output: Constraint matrix. */
+//                             real_t** lb,        /**< Output: Sequence of lower bound vectors (on variables). */
+//                             real_t** ub,        /**< Output: Sequence of upper bound vectors (on variables). */
+//                             real_t** lbA,       /**< Output: Sequence of lower constraints' bound vectors. */
+//                             real_t** ubA,       /**< Output: Sequence of upper constraints' bound vectors. */
+//                             real_t** xOpt,      /**< Output: Sequence of primal solution vectors
+//                                                  *           (not read if a null pointer is passed). */
+//                             real_t** yOpt,      /**< Output: Sequence of dual solution vectors
+//                                                  *           (not read if a null pointer is passed). */
+//                             real_t** objOpt     /**< Output: Sequence of optimal objective function values
+//                                                  *           (not read if a null pointer is passed). */
+//                             );
+
+
+// solveOQPbenchmark
+// runOQPbenchmark
+
+
+
 /*
 
 Page 19
@@ -378,6 +431,9 @@ QProblemB
   - This problems have no 
 
 */
+
+
+
 
 
 

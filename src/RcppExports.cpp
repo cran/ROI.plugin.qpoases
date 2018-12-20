@@ -311,6 +311,17 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// read_oqp_dimensions
+SEXP read_oqp_dimensions(std::string r_path);
+RcppExport SEXP _ROI_plugin_qpoases_read_oqp_dimensions(SEXP r_pathSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< std::string >::type r_path(r_pathSEXP);
+    rcpp_result_gen = Rcpp::wrap(read_oqp_dimensions(r_path));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_ROI_plugin_qpoases_qproblemb", (DL_FUNC) &_ROI_plugin_qpoases_qproblemb, 3},
@@ -337,6 +348,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_ROI_plugin_qpoases_is_unbounded", (DL_FUNC) &_ROI_plugin_qpoases_is_unbounded, 1},
     {"_ROI_plugin_qpoases_get_primal_solution", (DL_FUNC) &_ROI_plugin_qpoases_get_primal_solution, 1},
     {"_ROI_plugin_qpoases_get_dual_solution", (DL_FUNC) &_ROI_plugin_qpoases_get_dual_solution, 1},
+    {"_ROI_plugin_qpoases_read_oqp_dimensions", (DL_FUNC) &_ROI_plugin_qpoases_read_oqp_dimensions, 1},
     {NULL, NULL, 0}
 };
 

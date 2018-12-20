@@ -97,3 +97,7 @@ get_dual_solution <- function(r_model) {
     .Call(`_ROI_plugin_qpoases_get_dual_solution`, r_model)
 }
 
+read_oqp_dimensions <- function(r_path) {
+    .Call(`_ROI_plugin_qpoases_read_oqp_dimensions`, r_path)
+}
+
