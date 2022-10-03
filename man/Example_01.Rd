@@ -12,8 +12,10 @@
 }
 
 \examples{
+Sys.setenv(ROI_LOAD_PLUGINS = "FALSE")
+library("ROI")
+library("ROI.plugin.qpoases")
 
-require("ROI")
 A <- cbind(c(-4, -3, 0), 
            c( 2,  1, 0), 
            c( 0, -2, 1))

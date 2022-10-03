@@ -21,5 +21,5 @@ An online active set strategy to overcome the limitations of explicit MPC,
 ``International Journal of Robust and Nonlinear Control'', 2008
 
 H.J. Ferreau and A. Potschka and C. Kirches. \code{qpOASES} ``webpage''
-\url{https://projects.coin-or.org/qpOASES}, 2017
+\url{https://github.com/coin-or/qpOASES}, 2017
 }

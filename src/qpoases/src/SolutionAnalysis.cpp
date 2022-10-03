@@ -524,7 +524,7 @@ returnValue SolutionAnalysis::getVarianceCovariance(	SQProblem* const qp,
  */
 returnValue SolutionAnalysis::checkCurvatureOnStronglyActiveConstraints( SQProblem* qp )
 {
-  //Rprintf("checkCurvatureOnStronglyActiveConstraints( SQProblem* qp ) not yet implemented for standard qpOASES!\n");
+  // printf("checkCurvatureOnStronglyActiveConstraints( SQProblem* qp ) not yet implemented for standard qpOASES!\n");
   Rcpp::Rcout << "checkCurvatureOnStronglyActiveConstraints( SQProblem* qp ) not yet implemented for standard qpOASES!\n";
   return RET_INERTIA_CORRECTION_FAILED;
 }
@@ -657,7 +657,7 @@ returnValue SolutionAnalysis::checkCurvatureOnStronglyActiveConstraints( SQProbl
 	//}
       //}
       //else
-	//Rprintf("ERROR!\n");
+	//printf("ERROR!\n");
     //}
 
   //// If test is successful, add all bounds that have been removed
@@ -667,7 +667,7 @@ returnValue SolutionAnalysis::checkCurvatureOnStronglyActiveConstraints( SQProbl
     //{
       //ret = qp->addBound( FX_idx[k], saveBounds.getStatus( FX_idx[k] ), BT_TRUE, BT_FALSE );
       //if( ret != SUCCESSFUL_RETURN && ret != RET_BOUND_ALREADY_ACTIVE )
-	//Rprintf( "addBound() in checkCurvatureOnStronglyActiveConstraints(): %s\n", getGlobalMessageHandler()->getErrorCodeMessage( ret ) );
+	//printf( "addBound() in checkCurvatureOnStronglyActiveConstraints(): %s\n", getGlobalMessageHandler()->getErrorCodeMessage( ret ) );
     //}
 
   //qp->status = saveStatus;

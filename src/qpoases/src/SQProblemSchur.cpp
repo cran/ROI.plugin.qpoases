@@ -35,11 +35,11 @@
  */
 
 #include <qpOASES/SQProblemSchur.hpp>
+#include <qpOASES/LapackBlasReplacement.hpp>
 
 
 #ifndef __MATLAB__
-# include <Rcpp.h>
-// # define MyPrintf Rcpp::Rprintf
+#include <Rcpp.h>
 
 #include <cstdarg>
 void MyPrintf(const char* pformat, ... )
@@ -52,7 +52,6 @@ void MyPrintf(const char* pformat, ... )
 
   va_end(ap);
 }
-
 #else
 # include <mex.h>
 # define MyPrintf mexPrintf

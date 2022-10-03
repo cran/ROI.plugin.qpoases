@@ -79,7 +79,7 @@ QProblem::QProblem( ) : QProblemB( )
 /*
  *	Q P r o b l e m
  */
-QProblem::QProblem( int_t _nV, int_t _nC, HessianType _hessianType, BooleanType allocDenseMats ) 
+QProblem::QProblem( int_t _nV, int_t _nC, HessianType _hessianType, BooleanType allocDenseMats )
 	: QProblemB( _nV,_hessianType,allocDenseMats )
 {
 	int_t i;
@@ -5507,11 +5507,12 @@ returnValue QProblem::updateFarBounds(	real_t curFarBound, int_t nRamp,
 	int_t nV = getNV( );
 	int_t nC = getNC( );
 
-    returnValue returnvalue = QProblemB::updateFarBounds(	curFarBound,nRamp,
+	returnValue returnvalue = QProblemB::updateFarBounds(	curFarBound,nRamp,
 															lb_new,lb_new_far, ub_new,ub_new_far
 															);
-    if ( returnvalue != SUCCESSFUL_RETURN )
-        return returnvalue;
+	if ( returnvalue != SUCCESSFUL_RETURN ) {
+		return returnvalue;
+	}
 
 	if ( options.enableRamping == BT_TRUE )
 	{
@@ -6256,8 +6257,6 @@ returnValue QProblem::printIteration( 	int_t iter,
 }
 
 
-inline real_t abs (real_t x) { return (x>0)?x:-x; }
-
 /*
  * d r o p I n f e a s i b l e s
  */
@@ -6392,7 +6391,7 @@ returnValue QProblem::writeQpDataIntoMatFile(	const char* const filename
 	fclose( matFile );
 
 	return SUCCESSFUL_RETURN;
-    
+
 	#else /* __SUPPRESSANYOUTPUT__ */
 
 	return RET_NOT_YET_IMPLEMENTED;
@@ -6445,7 +6444,7 @@ returnValue QProblem::writeQpWorkspaceIntoMatFile(	const char* const filename
 	fclose( matFile );
 
 	return SUCCESSFUL_RETURN;
-    
+
 	#else /* __SUPPRESSANYOUTPUT__ */
 
 	return RET_NOT_YET_IMPLEMENTED;

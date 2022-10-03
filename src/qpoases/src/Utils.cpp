@@ -231,8 +231,8 @@ returnValue myPrintf( const char* s )
 		if ( s == 0 )
 			return RET_INVALID_ARGUMENTS;
 
-		#ifdef __R__
-			Rcpp::Rcout << s;
+		#ifdef __MATLAB__
+			mexPrintf( s );
 		#else
 			#ifdef __SCILAB__
 				sciprint( s );

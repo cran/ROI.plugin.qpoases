@@ -49,6 +49,7 @@ BEGIN_NAMESPACE_QPOASES
 FILE* stdFile = NULL;
 
 
+
 #ifndef __SUPPRESSANYOUTPUT__
 
 /** Defines pairs of global return values and messages. */

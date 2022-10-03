@@ -5,6 +5,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // qproblemb
 SEXP qproblemb(int number_of_varibales, int hessian_type, int alloc_dense_matrix);
 RcppExport SEXP _ROI_plugin_qpoases_qproblemb(SEXP number_of_varibalesSEXP, SEXP hessian_typeSEXP, SEXP alloc_dense_matrixSEXP) {
