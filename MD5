@@ -1,4 +1,4 @@
-bdaf7725b7ad7a476b99ca2108aaa5ed *DESCRIPTION
+14daa6af0c803e3c514979ccf99585ce *DESCRIPTION
 81ca1b54725140d033fa2181f2618cbe *NAMESPACE
 c4e22b738c042f72d07d3a42fb523ea3 *R/RcppExports.R
 aa127f4f8541320b570655cf1aa370e3 *R/plugin.R
@@ -26,7 +26,7 @@ a54c63e48f9227d6651d06e82f394bce *src/qpoases/include/qpOASES/LapackBlasReplacem
 6d796caebb1e3373b79106b1113953a4 *src/qpoases/include/qpOASES/MessageHandling.hpp
 271e77a4e1173e9b134ed74cd5aba727 *src/qpoases/include/qpOASES/MessageHandling.ipp
 6f6a034767d46e1b32815ac9570c86a2 *src/qpoases/include/qpOASES/Options.hpp
-a05a9b18f22c2a8d5c60ff895d60a7d6 *src/qpoases/include/qpOASES/QProblem.hpp
+04bbec74908d28cf37c992f59ec2bc24 *src/qpoases/include/qpOASES/QProblem.hpp
 56aceef52791198846cb0100f3aa5b95 *src/qpoases/include/qpOASES/QProblem.ipp
 5d27eae2811a0a7e5170187d48eab7b8 *src/qpoases/include/qpOASES/QProblemB.hpp
 50d773ef4015b93f37ad4fd2f48f3e4b *src/qpoases/include/qpOASES/QProblemB.ipp
@@ -54,7 +54,7 @@ aac0970240939c0b003500edef3ae7d1 *src/qpoases/src/LAPACKReplacement.cpp
 d5f7bd5484ace256d6b9896e80effd4b *src/qpoases/src/MessageHandling.cpp
 8a5be145be26ed06a35f7e395d67525e *src/qpoases/src/OQPinterface.cpp
 caf254d0c991d219ed9e673bc308ea9f *src/qpoases/src/Options.cpp
-b9a497a89288524e8adcbf1768f3634e *src/qpoases/src/QProblem.cpp
+0218be5a58fb9be8f4eba4588026a130 *src/qpoases/src/QProblem.cpp
 d139c0f4b5ed3fb41850932623533a05 *src/qpoases/src/QProblemB.cpp
 f54613aa4c62b5b7e6f1592e3461c87f *src/qpoases/src/SQProblem.cpp
 b515743b41b3fdeee2bade2239b2530d *src/qpoases/src/SQProblemSchur.cpp
