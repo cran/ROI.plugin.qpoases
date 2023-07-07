@@ -1,11 +1,11 @@
-14daa6af0c803e3c514979ccf99585ce *DESCRIPTION
+130ab965e1484e0bfd60cc924e621ce5 *DESCRIPTION
 81ca1b54725140d033fa2181f2618cbe *NAMESPACE
 c4e22b738c042f72d07d3a42fb523ea3 *R/RcppExports.R
 aa127f4f8541320b570655cf1aa370e3 *R/plugin.R
 4153d925bd2cebbaf0c68758c768f809 *R/status_codes.R
 d30b98d9f63d022c8f3902ee969c2efe *R/zzz.R
 716dde11328588c4c89ccf4e47d7a431 *README.md
-c976ab2f963eb6596e2858f677dada49 *man/Example_01.Rd
+16bfabeb76c4f96f61b4a4022fde14b1 *man/Example_01.Rd
 e3312c081c862cc5d36286cfa045d971 *man/ROI.plugin.qpoases-package.Rd
 272944f232db9176245175f69f004464 *src/Makevars
 a30e6904d46f6a972d504670d626ebf0 *src/RcppExports.cpp
@@ -26,7 +26,7 @@ a54c63e48f9227d6651d06e82f394bce *src/qpoases/include/qpOASES/LapackBlasReplacem
 6d796caebb1e3373b79106b1113953a4 *src/qpoases/include/qpOASES/MessageHandling.hpp
 271e77a4e1173e9b134ed74cd5aba727 *src/qpoases/include/qpOASES/MessageHandling.ipp
 6f6a034767d46e1b32815ac9570c86a2 *src/qpoases/include/qpOASES/Options.hpp
-04bbec74908d28cf37c992f59ec2bc24 *src/qpoases/include/qpOASES/QProblem.hpp
+47db3811bbfd424d8eb6f9490df93490 *src/qpoases/include/qpOASES/QProblem.hpp
 56aceef52791198846cb0100f3aa5b95 *src/qpoases/include/qpOASES/QProblem.ipp
 5d27eae2811a0a7e5170187d48eab7b8 *src/qpoases/include/qpOASES/QProblemB.hpp
 50d773ef4015b93f37ad4fd2f48f3e4b *src/qpoases/include/qpOASES/QProblemB.ipp
@@ -50,6 +50,7 @@ c145bc60d867fb85f5ee05f3b4c55617 *src/qpoases/include/qpOASES/extras/SolutionAna
 54796c017c766a9d2359221789b30a33 *src/qpoases/src/Flipper.cpp
 76e61d3097ac1cef156f69c6f5b181ed *src/qpoases/src/Indexlist.cpp
 aac0970240939c0b003500edef3ae7d1 *src/qpoases/src/LAPACKReplacement.cpp
+a3b452302e2bf80a0a79767006abbaed *src/qpoases/src/Makefile
 33dc7e5afed876da986d3fb7a53e0025 *src/qpoases/src/Matrices.cpp
 d5f7bd5484ace256d6b9896e80effd4b *src/qpoases/src/MessageHandling.cpp
 8a5be145be26ed06a35f7e395d67525e *src/qpoases/src/OQPinterface.cpp

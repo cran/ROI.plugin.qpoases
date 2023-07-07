@@ -1,5 +1,5 @@
 Package: ROI.plugin.qpoases
-Version: 1.0-2
+Version: 1.0-3
 Title: 'qpOASES' Plugin for the 'R' Optimization Infrastructure
 Authors@R: c( person("Florian", "Schwendinger", role = c("aut", "cre"), email = "FlorianSchwendinger@gmx.at"),
               person("Hans Joachim", "Ferreau", role = "cph"),
@@ -10,13 +10,13 @@ Authors@R: c( person("Florian", "Schwendinger", role = c("aut", "cre"), email = 
 Description: Enhances the 'R' Optimization Infrastructure ('ROI') package
          with the quadratic solver 'qpOASES'. More information about
          'qpOASES' can be found at <https://github.com/coin-or/qpOASES>.
-Imports: methods, slam, ROI (>= 0.2-5), Rcpp (>= 0.12.11), checkmate
+Imports: methods, slam, ROI (>= 1.0-0), Rcpp (>= 0.12.11), checkmate
 License: GPL-3
 LinkingTo: Rcpp
-URL: http://roi.r-forge.r-project.org/,
-        https://r-forge.r-project.org/projects/roi/
+URL: https://roigrp.gitlab.io,
+        https://gitlab.com/roigrp/solver/ROI.plugin.qpoases
 NeedsCompilation: yes
-Packaged: 2022-10-12 18:47:23 UTC; florian
+Packaged: 2023-07-07 10:58:17 UTC; f
 Author: Florian Schwendinger [aut, cre],
   Hans Joachim Ferreau [cph],
   Andreas Potschka [cph],
@@ -25,4 +25,4 @@ Author: Florian Schwendinger [aut, cre],
   Andreas Waechter [cph]
 Maintainer: Florian Schwendinger <FlorianSchwendinger@gmx.at>
 Repository: CRAN
-Date/Publication: 2022-10-16 07:35:37 UTC
+Date/Publication: 2023-07-07 12:50:02 UTC

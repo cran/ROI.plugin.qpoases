@@ -37,6 +37,7 @@
 #ifndef QPOASES_QPROBLEM_HPP
 #define QPOASES_QPROBLEM_HPP
 
+
 #include <iostream>
 #include <qpOASES/QProblemB.hpp>
 #include <qpOASES/Constraints.hpp>
